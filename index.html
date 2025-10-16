@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دليل فعاليات المدينة</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-primary text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>🎉 دليل فعاليات المدينة</h1>
+      <nav class="d-flex align-items-center">
+        <a href="index.html" class="text-white mx-2">الرئيسية</a>
+        <a href="events.html" class="text-white mx-2">الفعاليات</a>
+        <a href="event.html" class="text-white mx-2">عن الدليل</a>
+        <a href="contact.html" class="text-white mx-2">اتصل بنا</a>
+        <!-- Theme toggle -->
+        <button id="themeToggle" class="theme-toggle btn btn-sm ms-2" aria-pressed="false" title="تفعيل الوضع الداكن" type="button">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container mt-4">
+    <!-- سلايدر فعاليات بارزة -->
+    <section>
+      <h2 class="text-center mb-3">فعاليات بارزة هذا الأسبوع</h2>
+      <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/event1.jpg" class="d-block w-100" alt="فعالية 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>مهرجان الموسيقى الصيفي</h5>
+              <p>الجمعة 6 أكتوبر - ساحة الأمويين</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/event2.jpg" class="d-block w-100" alt="فعالية 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ماراثون دمشق الرياضي</h5>
+              <p>الأحد 8 أكتوبر - شارع الثورة</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- تصنيفات سريعة -->
+    <section class="text-center my-4">
+      <h3>تصنيفات سريعة</h3>
+      <div class="d-flex justify-content-center flex-wrap gap-2 mt-2">
+        <span class="badge bg-info">ثقافة</span>
+        <span class="badge bg-success">رياضة</span>
+        <span class="badge bg-warning text-dark">موسيقى</span>
+        <span class="badge bg-secondary">عائلي</span>
+      </div>
+    </section>
+
+    <!-- أحدث الفعاليات -->
+    <section>
+      <h3 class="text-center mb-3">أحدث الفعاليات</h3>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img/event1.jpg" class="card-img-top" alt="فعالية">
+            <div class="card-body">
+              <h5 class="card-title">معرض الكتاب السوري</h5>
+              <p class="card-text">الثلاثاء 10 أكتوبر - مكتبة الأسد</p>
+              <a href="event.html" class="btn btn-primary">تفاصيل</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3 mt-4">
+    <p>© 2025 دليل فعاليات المدينة</p>
+    <div>
+      <a href="#" class="text-white mx-2">📧 info@cityevents.com</a>
+      <a href="#" class="text-white mx-2">📱 Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="العودة إلى الأعلى" title="العودة إلى الأعلى" type="button">
+    ▲
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
